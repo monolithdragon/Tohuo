@@ -14,10 +14,10 @@ GameObject:
   - component: {fileID: 1946824326140329836}
   - component: {fileID: 1946824326140329832}
   - component: {fileID: 1664080226702311369}
-  - component: {fileID: 2762658724537980693}
+  - component: {fileID: 4947522051447031375}
   m_Layer: 0
   m_Name: PlayerShip
-  m_TagString: Target
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82d474c8ae4b46e49874d1ccafa89a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 300
+  shipSettings: {fileID: 11400000, guid: 4d8637fe07ee7094392dc2a3280397e6, type: 2}
 --- !u!114 &1664080226702311369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -160,8 +160,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f3d5360bfc6cd424cbafb51c047f5656, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  joystick: {fileID: 0}
---- !u!114 &2762658724537980693
+--- !u!114 &4947522051447031375
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -170,13 +169,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1946824326140329837}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3137e2ab6388284388343042aa967b2, type: 3}
+  m_Script: {fileID: 11500000, guid: 7348c8dec62fbd04d882e201c499782f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  firePoints:
-  - {fileID: 3279753341446314099}
-  _weapons:
-  - {fileID: 11400000, guid: 1c538b09bf10e524f8397a5bc9fa0b24, type: 2}
+  _currenthealth: 0
+  _deathEffect: {fileID: 0}
 --- !u!1 &3906717607171274195
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,7 +185,7 @@ GameObject:
   - component: {fileID: 7724868440394248830}
   m_Layer: 0
   m_Name: Weapons
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -232,7 +229,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5214394473984503460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.441, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7724868440394248830}
